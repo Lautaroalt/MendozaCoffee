@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+
+
+.navbar-logo img {
+    height: 50px; /* Ajusta la altura del logo según sea necesario */
+}
+
+.navbar-toggle {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+}
+
+.navbar-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* order: 2; */ /* Comentado para evitar el cambio de orden de los elementos */
+}
+
+.navbar-item {
+    margin: 0 10px;
+}
+
+.navbar-item a {
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Ocultar el menú en pantallas pequeñas */
+        position: relative;
+        top: 60px; /* Ajusta según el tamaño de tu navbar */
+        left: 0;
+        right: 0;
+        background-color: #333;
+        padding: 10px 20px;
+        transition: max-height 0.3s ease-in-out;
+        z-index: 1000; /* Asegurar que el menú esté por encima de otros elementos */
+    }
+
+    .navbar-menu.active {
+        display: block; /* Cambiado a block para que se abra hacia abajo */
+        max-height: 300px; /* Ajusta según la cantidad de items */
+        overflow-y: auto; /* Añadido para permitir desplazamiento vertical si el menú es muy largo */
+    }
+
+    .navbar-item {
+        margin: 10px 0; 
+    }
+
+    .navbar-toggle {
+        display: flex;
+        justify-content: center; /* Centrar el icono */
+        align-items: center; /* Centrar el icono */
+        z-index: 1001; /* Asegurar que el botón de menú esté por encima del menú desplegable */
+    }
+}
