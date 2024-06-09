@@ -21,8 +21,8 @@ const Navbar = () => {
             </button>
             <ul className={`navbar-menu ${menuOpen ? 'active' : ''}`}>
                 <li className="navbar-item"><a href="#banner">Inicio</a></li>
-                <li className="navbar-item"><a href="#cafeteria">Cafetería</a></li>
-                <li className="navbar-item"><a href="#carta">Carta</a></li>
+                <li className="navbar-item"><a href="#cafeteria">Nosotros</a></li>
+                <li className="navbar-item"><a href="#carta">Cafeteria</a></li>
                 <li className="navbar-item"><a href="#contacto">Contacto</a></li>   
             </ul>
         </nav>

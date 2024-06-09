@@ -3,18 +3,18 @@
 }
 
 .section {
-    background-color: #dfdfdf; /* Color gris claro */
+    background-color: #dfdfdf;
     padding: 50px 0;
 }
 
 .section-alt {
-    background-color: transparent; /* Transparente para la sección alterna */
+    background-color: transparent;
     padding: 50px 0;
 }
 
-/* Añadir esta clase para la tercera sección */
+
 .section-third {
-    background-color: #f9f9f9; /* Color gris claro */
+    background-color: #f9f9f9;
     padding: 50px 0;
 }
 
@@ -143,4 +143,69 @@
     to {
         opacity: 1;
     }
+}
+
+/*Cards */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espacio entre las cards */
+    margin-top: 50px; /* Espacio entre las secciones */
+    margin-left: 20px; /* Margen izquierdo */
+    margin-right: 20px; /* Margen derecho */
+}
+
+.product-cards .card {
+    display: flex;
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center;
+    width: 100%; /* Ajusta el ancho de las cards */
+    border-radius: 8px; /* Borde redondeado */
+    overflow: hidden; /* Oculta cualquier contenido fuera de la card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #dddcdc; /* Fondo gris claro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+}
+
+.product-cards .card:hover {
+    transform: scale(1.05); /* Aumentar tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+
+.product-cards .card-img {
+    width: 100%; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* La imagen se ajusta al tamaño del contenedor */
+}
+
+.product-cards .card-content {
+    padding: 20px; /* Espacio interior */
+    text-align: center; /* Centra el contenido */
+}
+
+.product-cards .card-content h3 {
+    margin-top: 10px; /* Espacio entre la imagen y el nombre */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+.product-cards .card-content p {
+    margin-top: 10px; /* Espacio entre el nombre y la descripción */
+    font-size: 14px; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+}
+
+.product-cards .card-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-cards .card-content button:hover {
+    background-color: #555; 
 }
