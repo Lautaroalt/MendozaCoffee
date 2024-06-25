@@ -6,7 +6,7 @@ const Cart = ({ isOpen, onClose }) => {
         <div className={`cart ${isOpen ? 'open' : ''}`}>
             <button className="close-btn" onClick={onClose}>Cerrar</button>
             <h2>Carrito</h2>
-            {/* Aquí puedes mostrar los productos añadidos al carrito */}
+            
         </div>
     );
 }
