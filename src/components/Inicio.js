@@ -125,13 +125,15 @@ const Inicio = () => {
             </a>
         </div>
         <div className="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!4v1718048755643!6m8!1m7!1sx1LpIYgURqd4w78tRNR83g!2m2!1d-32.98806192914351!2d-68.83052269958738!3f72.29206561813697!4f-14.462486831977273!5f0.7820865974627469"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </div>
+    <iframe
+        title="Ubicación de la Cafetería"
+        src="https://www.google.com/maps/embed?pb=!4v1718048755643!6m8!1m7!1sx1LpIYgURqd4w78tRNR83g!2m2!1d-32.98806192914351!2d-68.83052269958738!3f72.29206561813697!4f-14.462486831977273!5f0.7820865974627469"
+        loading="lazy"
+        allowFullScreen
+        referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+</div>
+
         </div>
             <footer className="footer">
                 <p>Derechos Reservados Lautaro Altamirano</p>
