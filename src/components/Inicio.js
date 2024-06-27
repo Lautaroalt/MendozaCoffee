@@ -89,7 +89,7 @@ const Inicio = () => {
                             <div className="card-content">
                                 <h3>{cafe.nombre}</h3>
                                 <p>{cafe.descripcion}</p>
-                                <button>Añadir al carrito</button>
+                                {/* <button>Añadir al carrito</button> */}
                             </div>
                         </div>
                     ))}
